@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Accordion from "../paner-form/Accordion";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 export default class PropertyFacilities extends Component {
   constructor(props) {
     super(props);
@@ -46,7 +46,7 @@ export default class PropertyFacilities extends Component {
               <div className="table__detail css-detail">
                 <span>
                   <div className="slidebar css-sidebar">
-                    <Link
+                    <div
                       key="1"
                       to="/registrationDetail/mainContact"
                       className="slidebar-item css-check"
@@ -63,8 +63,8 @@ export default class PropertyFacilities extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
-                    <Link
+                    </div>
+                    <div
                       key="2"
                       to="/registrationDetail/generationInformation"
                       className="slidebar-item css-check"
@@ -83,8 +83,8 @@ export default class PropertyFacilities extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
-                    <Link
+                    </div>
+                    <div
                       key="3"
                       to="/registrationDetail/propertyFacilities"
                       className="slidebar-item slidebar-item--is-active css-check"
@@ -103,8 +103,8 @@ export default class PropertyFacilities extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
-                    <Link
+                    </div>
+                    <div
                       key="4"
                       to="/registrationDetail/rooms"
                       className="slidebar-item css-check"
@@ -121,8 +121,8 @@ export default class PropertyFacilities extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
-                    <Link
+                    </div>
+                    <div
                       key="5"
                       to="/registrationDetail/roomFacilities"
                       className="slidebar-item css-check"
@@ -141,8 +141,8 @@ export default class PropertyFacilities extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
-                    <Link key="6" to="" className="slidebar-item css-check">
+                    </div>
+                    <div key="6" to="" className="slidebar-item css-check">
                       <div className="c-flexbox css-nb">
                         <span className="text css-nb-text">Photos</span>
                         <span
@@ -155,8 +155,8 @@ export default class PropertyFacilities extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
-                    <Link key="7" to="" className="slidebar-item css-check">
+                    </div>
+                    <div key="7" to="" className="slidebar-item css-check">
                       <div className="c-flexbox css-nb">
                         <span className="text css-nb-text">
                           Payment Information
@@ -171,7 +171,7 @@ export default class PropertyFacilities extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
+                    </div>
                   </div>
                 </span>
                 <div

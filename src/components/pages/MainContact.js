@@ -37,17 +37,21 @@ class MainContact extends React.Component {
         taxCode: this.taxCode.current.value,
         idTK: this.state.idTk.toString(),
       }
-    ).then((response) => {
-      // this.state.idTT = response.data;
-      // this.setState(this);
-      console.log(this.state.idTk);
-      this.props.history.push("/registrationDetail/generationInformation/" + this.state.idTk);
-    }).catch(err => console.log(err.response));
+    )
+      .then((response) => {
+        // this.state.idTT = response.data;
+        // this.setState(this);
+        console.log(this.state.idTk);
+        this.props.history.push(
+          "/registrationDetail/generationInformation/" + this.state.idTk
+        );
+      })
+      .catch((err) => console.log(err.response));
   };
   setName = (e) => {
     this.state.fullName = e.target.value;
     this.setState(this);
-  }
+  };
   render() {
     return (
       <div className="oka-page">
@@ -252,54 +256,55 @@ class MainContact extends React.Component {
                             <span className="label-required">*</span>
                           </label>
                         </div>
-                        {this.state.fullName == null || this.state.fullName === "" ? <div className="box-column css-bxcol2">
-                          <div className="input-group css-inp">
-                            <div className="input-group__inner">
-                              <div className="input control-container css-radio-gr">
-                                <div className="__inner">
-                                  <div className="__padder">
-                                    <input
-                                    pattern="[^\s]+"
-                                      onChange={this.setName}
-                                      ref={this.fullName}
-                                      touched="true"
-                                      type="text"
-                                      className="css-txt -control"
-                                    />
+                        {this.state.fullName == null ||
+                        this.state.fullName === "" ? (
+                          <div className="box-column css-bxcol2">
+                            <div className="input-group css-inp">
+                              <div className="input-group__inner">
+                                <div className="input control-container css-radio-gr">
+                                  <div className="__inner">
+                                    <div className="__padder">
+                                      <input
+                                        pattern="[^\s]+"
+                                        onChange={this.setName}
+                                        ref={this.fullName}
+                                        touched="true"
+                                        type="text"
+                                        className="css-txt -control"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <ul className="css-error --simple">
+                                <li>
+                                  <span>This section must be filled.</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        ) : (
+                          <div className="box-column css-bxcol2">
+                            <div className="input-group css-inp">
+                              <div className="input-group__inner">
+                                <div className="input control-container css-radio-gr">
+                                  <div className="__inner">
+                                    <div className="__padder">
+                                      <input
+                                        onChange={this.setName}
+                                        ref={this.fullName}
+                                        touched="true"
+                                        type="text"
+                                        className="css-txt -control"
+                                      />
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <ul className="css-error --simple">
-                              <li>
-                                <span>This section must be filled.</span>
-                              </li>
-                            </ul>
                           </div>
-                        </div>
-                        :
-                        <div className="box-column css-bxcol2">
-                          <div className="input-group css-inp">
-                            <div className="input-group__inner">
-                              <div className="input control-container css-radio-gr">
-                                <div className="__inner">
-                                  <div className="__padder">
-                                    <input
-                                    onChange={this.setName}
-                                      ref={this.fullName}
-                                      touched="true"
-                                      type="text"
-                                      className="css-txt -control"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      
-                      }
-                        </div>
+                        )}
+                      </div>
                       <div
                         className="line css-line"
                         style={{ marginTop: "0px" }}
@@ -533,7 +538,7 @@ class MainContact extends React.Component {
                             </ul>
                           </div>
                         </div>
-                      {/*
+                        {/*
                         <div
                           className="c-column css-bxcol2"
                           style={{ marginTop: "-4px" }}
@@ -577,7 +582,7 @@ class MainContact extends React.Component {
                         className="line css-line"
                         style={{ marginTop: "0px" }}
                       ></div>
-                       {/* Address */}
+                      {/* Address */}
                       <div className="box-row css-row">
                         <div
                           className="box-column css-box-col"
@@ -656,11 +661,7 @@ class MainContact extends React.Component {
                 </div>
               </div>
               <div className="block css-contact">
-                
-                <button
-                  className="btn-contact"
-                  onClick={this.createContact}
-                >
+                <button className="btn-contact" onClick={this.createContact}>
                   Save and Continues
                 </button>
               </div>

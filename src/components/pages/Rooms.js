@@ -95,7 +95,7 @@ class Rooms extends Component {
               <div className="table__detail css-detail">
                 <span>
                   <div className="slidebar css-sidebar">
-                    <Link
+                    <div
                       key="1"
                       to="/registrationDetail/mainContact"
                       className="slidebar-item css-check"
@@ -112,8 +112,8 @@ class Rooms extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
-                    <Link
+                    </div>
+                    <div
                       key="2"
                       to="/registrationDetail/generationInformation"
                       className="slidebar-item css-check"
@@ -132,8 +132,8 @@ class Rooms extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
-                    <Link
+                    </div>
+                    <div
                       key="3"
                       to="/registrationDetail/propertyFacilities"
                       className="slidebar-item css-check"
@@ -152,8 +152,8 @@ class Rooms extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
-                    <Link
+                    </div>
+                    <div
                       key="4"
                       to="/registrationDetail/rooms"
                       className="slidebar-item slidebar-item--is-active css-check"
@@ -170,8 +170,8 @@ class Rooms extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
-                    <Link
+                    </div>
+                    <div
                       key="5"
                       to="/registrationDetail/roomFacilities"
                       className="slidebar-item css-check"
@@ -190,8 +190,8 @@ class Rooms extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
-                    <Link key="6" to="" className="slidebar-item css-check">
+                    </div>
+                    <div key="6" to="" className="slidebar-item css-check">
                       <div className="c-flexbox css-nb">
                         <span className="text css-nb-text">Photos</span>
                         <span
@@ -204,8 +204,8 @@ class Rooms extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
-                    <Link key="7" to="" className="slidebar-item css-check">
+                    </div>
+                    <div key="7" to="" className="slidebar-item css-check">
                       <div className="c-flexbox css-nb">
                         <span className="text css-nb-text">
                           Payment Information
@@ -220,7 +220,7 @@ class Rooms extends Component {
                           7
                         </span>
                       </div>
-                    </Link>
+                    </div>
                   </div>
                 </span>
                 <div

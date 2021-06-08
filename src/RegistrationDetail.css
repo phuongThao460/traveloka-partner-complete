@@ -5,6 +5,7 @@
   -moz-osx-font-smoothing: grayscale;
   -o-font-smoothing: antialiased;
   box-sizing: inherit;
+  font-family: Roboto, Arial, sans-serif;;
 }
 .oka-page {
   padding-top: 25px;
@@ -115,7 +116,7 @@ select {
   background-color: rgb(255, 97, 92);
 }
 .slidebar-item--is-active {
-  font-weight: 500;
+  font-weight: 600;
   color: black !important;
   background-color: rgb(230, 241, 250) !important;
 }
@@ -1140,6 +1141,7 @@ textarea {
   font-size: 16px;
   background-color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
 .css-contact {
   margin-right: 0px;
