@@ -1,7 +1,7 @@
 import './App.css'
 import LoginForm from './components/pages/LoginForm'
 import Home from './components/pages/Home'
-import Services from './components/pages/Services';
+//import Services from './components/pages/Services';
 import Products from './components/pages/Products'
 import RegistrationDetail from './components/pages/RegistrationDetail'
 import AddHomeBlock from './components/pages/AddHomeBlock'

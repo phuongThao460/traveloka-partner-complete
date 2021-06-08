@@ -19,7 +19,6 @@ function RegistrationDetail() {
           <Route path="/registrationDetail/propertyFacilities/:idNha" component={PropertyFacilities}/>
           <Route path="/registrationDetail/rooms/:idNha" component={Rooms}/>
           <Route path="/registrationDetail/roomFacilities" component={RoomFacilities}/>
-          
         </Switch>
       </Router>
     </div>
